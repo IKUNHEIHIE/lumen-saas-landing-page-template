@@ -63,7 +63,7 @@
   /* ---------- Live hero counter ---------- */
   const reqEl = $('#reqs');
   let reqs = 4812604113;
-  setInterval(() => { reqs += Math.floor(40000 + Math.random() * 30000); reqEl.textContent = reqs.toLocaleString('en-US'); }, 700);
+  setInterval(() => { reqs += Math.floor(40000 + Math.random() * 30000); reqEl.textContent = reqs.toLocaleString('zh-CN'); }, 700);
 
   /* ---------- Mini UI: latency sparkline ---------- */
   /**
@@ -119,12 +119,12 @@
    */
   const codeEl = $('#codeType');
   const codeLines = [
-    '<span class="c"># ship a model to the planet</span>',
+    '<span class="c"># 把一个模型部署到全球</span>',
     '<span class="k">$</span> lumen deploy <span class="s">qwen/Qwen3-32B</span> \\',
     '    --regions <span class="s">all</span> --min-warm <span class="s">2</span>',
     '',
-    '<span class="g">✓</span> compiled for H200 · fp8',
-    '<span class="g">✓</span> live in 42 regions · 1m 48s',
+    '<span class="g">✓</span> 已为 H200 · fp8 编译完成',
+    '<span class="g">✓</span> 已在 42 个区域上线 · 1 分 48 秒',
     '<span class="k">→</span> https://acme.lumen.run/v1',
   ];
   const typeCode = async () => {
@@ -244,15 +244,15 @@
    */
   (() => {
     const Q = [
-      ['We moved 14 models in a weekend. <b>p95 dropped from 410 ms to 62 ms</b> and our on-call rotation finally got quiet.', 'Priya Raman', 'Head of Infra, Vesper AI', '1494790108377-be9c29b29330', 1],
-      ['The model router alone paid for Lumen. We send easy prompts to a small model and saved 48% in the first month.', 'Marcus Lee', 'CTO, Kite Labs', '1500648767791-00dcc994a43e'],
-      ['I keep waiting for the cold start. It never comes.', 'Sofia Alvarez', 'Staff Engineer, Northwind', '1438761681033-6461ffad8d80'],
-      ['Our users in Jakarta used to get 1.4 s first tokens. Now it is <b>under 90 ms.</b> Same model, same code.', 'Arif Hakim', 'Founder, Monogram', '1507003211169-0a1dd7228f2d'],
-      ['Lumen is the first infra vendor our security team approved in one meeting. Zero retention by default helped.', 'Hannah Becker', 'VP Engineering, Helix', '1534528741775-53994a69daeb'],
-      ['Black Friday traffic tripled and the dashboard just showed GPUs appearing in the right regions <b>ten minutes early.</b>', 'Tom Okafor', 'Platform Lead, Arcadia', '1506794778202-cad84cf45f1d', 1],
-      ['Traces down to the prefill step. We found a 600-token system prompt that was costing us $9k a month.', 'Lena Novak', 'ML Engineer, Quanta', '1544005313-94ddf0286df2'],
-      ['Switching was literally a base URL change. Our OpenAI client code did not notice.', 'Diego Castro', 'Engineer, parallel', '1472099645785-5658abf4ff4e'],
-      ['Finally a bill I can explain to finance. Per token, per project, per region.', 'Mei Tanaka', 'COO, Vesper AI', '1517841905240-472988babdf9'],
+      ['我们用一个周末迁了 14 个模型。<b>p95 从 410 ms 降到 62 ms</b>，值班表终于安静了。', 'Priya Raman', '基础设施负责人，Vesper AI', '1494790108377-be9c29b29330', 1],
+      ['光是模型路由器就值回 Lumen 的钱。我们把简单提示词交给小模型，第一个月省了 48%。', 'Marcus Lee', 'CTO，Kite Labs', '1500648767791-00dcc994a43e'],
+      ['我一直在等着冷启动出现。它始终没来。', 'Sofia Alvarez', '资深工程师，Northwind', '1438761681033-6461ffad8d80'],
+      ['我们雅加达的用户以前首 token 要 1.4 秒。现在是<b>90 ms 以内。</b>同一个模型，同一份代码。', 'Arif Hakim', '创始人，Monogram', '1507003211169-0a1dd7228f2d'],
+      ['Lumen 是我们安全团队第一次在一场会上就批准的基础设施厂商。默认零留存帮了大忙。', 'Hannah Becker', '工程副总裁，Helix', '1534528741775-53994a69daeb'],
+      ['黑五流量翻了三倍，而面板只是显示 GPU <b>提前十分钟</b>出现在了正确的区域。', 'Tom Okafor', '平台负责人，Arcadia', '1506794778202-cad84cf45f1d', 1],
+      ['追踪能细到预填充那一步。我们揪出了一个 600 token 的系统提示词，它每个月烧掉 9 千美元。', 'Lena Novak', '机器学习工程师，Quanta', '1544005313-94ddf0286df2'],
+      ['切换就是改一下 base URL。我们的 OpenAI 客户端代码毫无察觉。', 'Diego Castro', '工程师，parallel', '1472099645785-5658abf4ff4e'],
+      ['终于有一份我能向财务讲清楚的账单了。按 token、按项目、按区域。', 'Mei Tanaka', 'COO，Vesper AI', '1517841905240-472988babdf9'],
     ];
     const card = ([p, n, r, img, big]) => `<figure class="quote${big ? ' big' : ''}"><p>${p}</p><footer><img src="https://images.unsplash.com/photo-${img}?w=80&h=80&fit=crop&crop=faces" alt="" loading="lazy"><div>${n}<span>${r}</span></div></footer></figure>`;
     const cols = $('#cols');
@@ -462,7 +462,7 @@
         onUpdate: () => el.textContent = o.v.toLocaleString('en-US', { minimumFractionDigits: dec, maximumFractionDigits: dec }) });
     });
     const so = { v: 0 };
-    gsap.to(so, { v: 6412, duration: 2.4, ease: 'power3.out', scrollTrigger: { trigger: spend, start: 'top 90%' }, onUpdate: () => spend.textContent = '$' + Math.round(so.v).toLocaleString('en-US') });
+    gsap.to(so, { v: 6412, duration: 2.4, ease: 'power3.out', scrollTrigger: { trigger: spend, start: 'top 90%' }, onUpdate: () => spend.textContent = '$' + Math.round(so.v).toLocaleString('zh-CN') });
 
     /* Console: 3D tilt into place */
     /**

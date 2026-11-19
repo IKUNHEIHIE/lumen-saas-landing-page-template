@@ -1,17 +1,17 @@
 <!--
-  Lumen: free SaaS / AI landing page template (HTML, GSAP, Lenis, Three.js). MIT licensed.
-  Made by Vantle, an independent design and development studio: https://vantle.studio
+  Lumen: 免费 SaaS / AI 落地页模板（HTML、GSAP、Lenis、Three.js），MIT 协议。
+  由独立设计与开发工作室 Vantle 制作：https://vantle.studio
 -->
 
 <a href="https://middlesugar7000.github.io/lumen-saas-landing-page-template/">
-  <img src=".github/assets/hero.svg" alt="Lumen, a free dark SaaS landing page template with a scroll-driven Three.js scene, built with HTML, GSAP, Lenis and Three.js" width="100%">
+  <img src=".github/assets/hero.svg" alt="Lumen：一个深色风格的免费 SaaS 落地页模板，带滚动驱动的 Three.js 场景，使用 HTML、GSAP、Lenis 与 Three.js 构建" width="100%">
 </a>
 
 <p align="center">
-  <a href="https://middlesugar7000.github.io/lumen-saas-landing-page-template/"><img src=".github/assets/btn-demo.svg" alt="Live demo" height="56"></a>&nbsp;
-  <a href="https://github.com/MiddleSugar7000/lumen-saas-landing-page-template/generate"><img src=".github/assets/btn-use.svg" alt="Use this template" height="56"></a>&nbsp;
-  <a href="https://github.com/MiddleSugar7000/lumen-saas-landing-page-template/archive/refs/heads/main.zip"><img src=".github/assets/btn-download.svg" alt="Download ZIP" height="56"></a>&nbsp;
-  <a href="https://github.com/MiddleSugar7000/lumen-saas-landing-page-template/stargazers"><img src=".github/assets/btn-star.svg" alt="Star on GitHub" height="56"></a>
+  <a href="https://middlesugar7000.github.io/lumen-saas-landing-page-template/"><img src=".github/assets/btn-demo.svg" alt="在线演示" height="56"></a>&nbsp;
+  <a href="https://github.com/MiddleSugar7000/lumen-saas-landing-page-template/generate"><img src=".github/assets/btn-use.svg" alt="使用此模板" height="56"></a>&nbsp;
+  <a href="https://github.com/MiddleSugar7000/lumen-saas-landing-page-template/archive/refs/heads/main.zip"><img src=".github/assets/btn-download.svg" alt="下载 ZIP" height="56"></a>&nbsp;
+  <a href="https://github.com/MiddleSugar7000/lumen-saas-landing-page-template/stargazers"><img src=".github/assets/btn-star.svg" alt="在 GitHub 上加星" height="56"></a>
 </p>
 
 <p align="center">
@@ -22,49 +22,49 @@
   <a href="https://vantle.studio/?utm_source=github&utm_medium=badge&utm_campaign=lumen"><img alt="Made by Vantle" src="https://img.shields.io/badge/made%20by-Vantle-593FF2?style=flat-square&labelColor=07080B"></a>
 </p>
 
-# Lumen: Free SaaS Landing Page Template with Three.js (HTML + GSAP + Lenis)
+# Lumen：带 Three.js 的免费 SaaS 落地页模板（HTML + GSAP + Lenis）
 
-**Lumen is a free, MIT-licensed landing page template for SaaS, AI and developer-tool products.** It's a dark, cinematic page for a fictional AI inference cloud, built around one persistent Three.js scene: a liquid chrome core with a glass ring that, as you scroll, dissolves into 11,000 particles that become a globe and then a GPU fabric. Around it: GSAP ScrollTrigger motion, Lenis smooth scroll, a bento grid of live mini UIs, a console mockup, pricing, FAQ and more. Plain HTML, CSS and JS: no framework, no npm, no build step.
+**Lumen 是一个免费、MIT 协议的落地页模板，适用于 SaaS、AI 与开发者工具类产品。** 它是一张深色、电影质感的页面，为一个虚构的 AI 推理云而作，核心是一个常驻的 Three.js 场景：一枚液态铬质感的内核与玻璃光环，随着滚动溶解为 11,000 个粒子，先是汇成地球，再化为一张 GPU 算力网。环绕它的，是 GSAP ScrollTrigger 动效、Lenis 平滑滚动、由实时小 UI 组成的 Bento 网格、控制台模拟界面、定价、FAQ 等模块。纯 HTML、CSS 和 JS：无框架、无 npm、无需构建。
 
-Use it for an AI product, API, dev tool, cloud platform, B2B SaaS, startup launch or waitlist page. Swap the copy and you have a premium launch page in an afternoon.
+你可以用它做 AI 产品、API、开发者工具、云平台、B2B SaaS、创业公司发布页或候补名单页。换掉文案，一个下午就能得到一张高质感的发布页。
 
-> **Want one built for your own product?** This template was designed and coded by **[Vantle](https://vantle.studio/?utm_source=github&utm_medium=readme&utm_campaign=lumen)**, an independent design and development studio for brands, websites and software. We reply within one business day. **[Start a project →](https://vantle.studio/?utm_source=github&utm_medium=readme&utm_campaign=lumen#start)**
+> **想为自己的产品定制一个？** 本模板由 **[Vantle](https://vantle.studio/?utm_source=github&utm_medium=readme&utm_campaign=lumen)** 设计并编码，这是一家专注品牌、网站与软件的独立设计与开发工作室。我们会在一个工作日内回复。**[开始一个项目 →](https://vantle.studio/?utm_source=github&utm_medium=readme&utm_campaign=lumen#start)**
 
 ---
 
-## Contents
+## 目录
 
-- [Preview](#preview)
-- [Features](#features)
-- [Quick start](#quick-start)
-- [Customize it](#customize-it)
-- [Page sections](#page-sections)
-- [Performance](#performance)
-- [Tech stack](#tech-stack)
-- [FAQ](#faq)
-- [License](#license)
-- [Need a custom landing page?](#need-a-custom-landing-page)
+- [预览](#预览)
+- [特性](#特性)
+- [快速开始](#快速开始)
+- [自定义](#自定义)
+- [页面结构](#页面结构)
+- [性能](#性能)
+- [技术栈](#技术栈)
+- [常见问题](#常见问题)
+- [许可证](#许可证)
+- [需要定制落地页？](#需要定制落地页)
 
-## Preview
+## 预览
 
 <a href="https://middlesugar7000.github.io/lumen-saas-landing-page-template/">
-  <img src=".github/assets/showcase.svg" alt="Screenshots of the Lumen SaaS landing page template: hero with liquid chrome core, pinned particle globe, bento grid with live mini UIs, console dashboard mockup" width="100%">
+  <img src=".github/assets/showcase.svg" alt="Lumen SaaS 落地页模板截图：带液态铬内核的首屏、钉住的粒子地球、带实时小 UI 的 Bento 网格、控制台仪表盘模拟" width="100%">
 </a>
 
-## Features
+## 特性
 
-<img src=".github/assets/features.svg" alt="Template features: scroll-driven WebGL scene, GSAP and Lenis motion, live mini UIs, adaptive quality, no build step" width="100%">
+<img src=".github/assets/features.svg" alt="模板特性：滚动驱动的 WebGL 场景、GSAP 与 Lenis 动效、实时小 UI、自适应画质、无需构建" width="100%">
 
-- **One scroll-driven 3D scene.** A procedural Three.js world (no model files): liquid chrome core, fresnel glass ring, chrome orbits and a particle field that morphs halo → globe → GPU fabric in a pinned story section, then returns as a rising "sun" behind the final CTA.
-- **Motion with weight.** Lenis smooth scroll, GSAP ScrollTrigger + SplitText: word-by-word hero reveal, scroll-fill statement text, a console mockup that tilts into place, stacking cards, rolling counters, parallax.
-- **Live mini UIs.** Latency sparkline that updates in real time, model router with travelling packets, a typing terminal, autoscaling bars, flipping toggles, uptime ring, spend meter. All HTML/SVG, no images.
-- **13 sections.** Hero, logos, statement, 3D story, bento features, console, stats, how-it-works, testimonials, pricing with monthly/yearly toggle, FAQ, CTA, footer.
-- **Fast on big screens.** A render-pixel budget and automatic quality scaling keep it smooth on 1440p/4K monitors and laptops (see [Performance](#performance)).
-- **Ember Dark design system.** Near-black blue-tinted surfaces, one ember accent (`#FF6A2B`), Geist + Instrument Serif typography, hairline borders.
-- **Responsive and accessible.** Fluid `clamp()` type, mobile layouts, keyboard focus states, and full `prefers-reduced-motion` support.
-- **SEO-ready.** Semantic headings, meta description, Open Graph tags and theme color.
+- **一个滚动驱动的 3D 场景。** 一个程序化生成的 Three.js 世界（不依赖模型文件）：液态铬内核、菲涅尔玻璃光环、铬质轨道，以及一片粒子场——在钉住的故事区里完成「光晕 → 地球 → GPU 算力网」的形变，最后在结尾 CTA 背后升起为一轮「太阳」。
+- **有重量的动效。** Lenis 平滑滚动、GSAP ScrollTrigger + SplitText：标题逐词升起、宣言文字随滚动点亮、控制台模拟界面倾斜归位、卡片堆叠、数字滚动、视差位移。
+- **实时小 UI。** 实时刷新的延迟折线、带流动数据包的模型路由器、逐字打字的终端、自动扩缩容柱状图、循环切换的开关、可用性圆环、支出进度条。全部用 HTML/SVG 实现，不用图片。
+- **13 个区块。** 首屏、客户 Logo、宣言、3D 故事、Bento 特性、控制台、数据统计、工作原理、用户评价、带月付/年付切换的定价、FAQ、CTA、页脚。
+- **大屏依然流畅。** 渲染像素预算与自动画质降级，让它在 1440p/4K 显示器和笔记本上都保持顺滑（见 [性能](#性能)）。
+- **Ember Dark 设计系统。** 近黑偏蓝的表面、单一余烬色强调（`#FF6A2B`）、Geist + Instrument Serif 字体搭配、发丝级描边。
+- **响应式且可访问。** 流式 `clamp()` 字号、移动端布局、键盘焦点样式，并完整支持 `prefers-reduced-motion`。
+- **SEO 友好。** 语义化标题层级、meta description、Open Graph 标签与 theme-color。
 
-## Quick start
+## 快速开始
 
 ```bash
 git clone https://github.com/MiddleSugar7000/lumen-saas-landing-page-template.git
@@ -72,224 +72,95 @@ cd lumen-saas-landing-page-template
 npx serve .
 ```
 
-Serve the folder rather than double-clicking `index.html`: the Three.js scene is an ES module loaded through an import map, which browsers block on `file://`. Any static server works (`python -m http.server` too).
+请通过本地服务器访问，而不是直接双击 `index.html`：Three.js 场景是通过 import map 加载的 ES 模块，浏览器在 `file://` 协议下会拦截它。任何静态服务器都可以（`python -m http.server` 也行）。
 
-**Deploy for free:** push to GitHub and enable **GitHub Pages**, or drag the folder into Netlify, Vercel or Cloudflare Pages.
+**免费部署：** 推送到 GitHub 并开启 **GitHub Pages**，或者把整个文件夹拖进 Netlify、Vercel、Cloudflare Pages。
 
-## Customize it
+## 自定义
 
-| What | Where |
+| 想改什么 | 改哪里 |
 | --- | --- |
-| Colors, radii, easing | CSS variables on `:root` in `css/style.css` (`--bg-0`, `--accent`, `--r-lg`…) |
-| Accent color | Change `--accent` / `--accent-2` in CSS and `ACCENT` at the top of `js/scene.js` |
-| Fonts | The Google Fonts `<link>` in `<head>` (Geist, Geist Mono, Instrument Serif) |
-| Copy, pricing, FAQ | Plain HTML in `index.html` |
-| 3D scene, choreography | `js/scene.js` (materials, particle shapes, scroll poses in `frame()`) |
-| Motion, mini UIs | `js/main.js` (ScrollTriggers, counters, charts, testimonials data) |
-| Template credit badge | The `<aside class="promo">` block in `index.html`. Delete it to remove the badge |
+| 颜色、圆角、缓动 | `css/style.css` 中 `:root` 上的 CSS 变量（`--bg-0`、`--accent`、`--r-lg`…） |
+| 强调色 | 修改 CSS 中的 `--accent` / `--accent-2`，以及 `js/scene.js` 顶部的 `ACCENT` |
+| 字体 | `<head>` 中的 Google Fonts `<link>`（Geist、Geist Mono、Instrument Serif、Noto Sans SC） |
+| 文案、定价、FAQ | `index.html` 里的纯 HTML |
+| 3D 场景与运镜 | `js/scene.js`（材质、粒子形态、`frame()` 中的滚动姿态） |
+| 动效与小 UI | `js/main.js`（ScrollTrigger、计数器、图表、评价数据） |
+| 模板署名徽标 | `index.html` 中的 `<aside class="promo">` 区块，删除即可去掉 |
 
-## Page sections
+## 页面结构
 
-1. **Hero** with the liquid chrome core, word-by-word headline and live telemetry strip
-2. **Logo marquee** with masked edges
-3. **Statement** that fills in as you scroll
-4. **Pinned 3D story** with three stages: bring any model, run it everywhere (globe), scale on the fabric
-5. **Bento features** with seven live mini UIs
-6. **Console mockup** that tilts into place, with floating notifications
-7. **Stats** with rolling counters over a giant faded number
-8. **How it works** as stacking cards (terminal, region map, request trace)
-9. **Testimonials** in three vertical marquee columns
-10. **Pricing** with an animated monthly / yearly toggle
-11. **FAQ** accordion
-12. **Final CTA** with the core rising behind the headline
-13. **Footer** with a giant wordmark
+1. **首屏**：液态铬内核、逐词升起的大标题、实时遥测条
+2. **客户 Logo 跑马灯**，两侧带渐隐遮罩
+3. **宣言**，文字随滚动渐次点亮
+4. **钉住的 3D 故事**，三个阶段：接入任意模型、随处运行（地球）、在算力网上扩展
+5. **Bento 特性区**，含七个实时小 UI
+6. **控制台模拟界面**，倾斜归位，并带浮动通知
+7. **数据统计**，巨大淡色数字上叠加滚动计数
+8. **工作原理**，以堆叠卡片呈现（终端、区域地图、请求追踪）
+9. **用户评价**，三列纵向跑马灯
+10. **定价**，带月付 / 年付切换动画
+11. **FAQ** 手风琴
+12. **结尾 CTA**，内核在标题背后升起
+13. **页脚**，配一枚巨大字标
 
-## Performance
+## 性能
 
-The 3D scene renders at most ~2.1M pixels per frame (≈1080p), whatever the display. On a 1440p monitor with Windows scaling, the native resolution would be 6–8M pixels. Bloom runs at half resolution, the glass ring uses a cheap fresnel shader instead of a transmission pass, and the scene pauses whenever no 3D section is on screen. If frames still run long, resolution drops step by step and then bloom switches off. Under `prefers-reduced-motion` the camera stays calm and every scroll animation is disabled.
+无论显示器规格如何，3D 场景每帧最多渲染约 210 万像素（≈1080p）。在开了缩放的 1440p 显示器上，原生分辨率会是 600–800 万像素。泛光效果以半分辨率运行，玻璃光环使用廉价的菲涅尔着色器而非透射通道，且当屏幕上没有任何 3D 区块时场景会暂停渲染。如果帧时间仍然过长，分辨率会逐级下调，之后关闭泛光。在 `prefers-reduced-motion` 下，相机会保持静止，所有滚动动画关闭。
 
-## Tech stack
+## 技术栈
 
-HTML5 · CSS (custom properties) · JavaScript (ES modules) · [Three.js](https://threejs.org) r170 · [GSAP 3.13](https://gsap.com) + ScrollTrigger + SplitText · [Lenis](https://lenis.darkroom.engineering) · Google Fonts. Everything is loaded from CDNs.
+HTML5 · CSS（自定义属性）· JavaScript（ES 模块）· [Three.js](https://threejs.org) r170 · [GSAP 3.13](https://gsap.com) + ScrollTrigger + SplitText · [Lenis](https://lenis.darkroom.engineering) · Google Fonts。所有依赖均通过 CDN 加载。
 
-## FAQ
+## 常见问题
 
-**Is this SaaS landing page template really free?**
-Yes. Lumen is released under the MIT license, so you can use it in personal and commercial projects, modify it and ship it. Keeping the license notice is the only requirement.
+**这个 SaaS 落地页模板真的免费吗？**
+是的。Lumen 以 MIT 协议发布，个人与商业项目都可使用、修改和发布。唯一的要求是保留许可证声明。
 
-**Do I need React, Next.js or a build tool?**
-No. It's plain HTML/CSS/JS. Serve the folder from any static host.
+**需要 React、Next.js 或构建工具吗？**
+不需要。就是纯 HTML/CSS/JS，放到任意静态托管上即可。
 
-**What kind of product is it good for?**
-AI products, APIs, developer tools, cloud and infrastructure platforms, B2B SaaS, startup launches and waitlists. Anything that benefits from a dark, technical, premium look.
+**它适合什么样的产品？**
+AI 产品、API、开发者工具、云与基础设施平台、B2B SaaS、创业公司发布页与候补名单页。任何需要深色、技术感、高端观感的产品都合适。
 
-**Can I remove the "Free template by Vantle" badge?**
-Yes. Delete the `<aside class="promo">` block in `index.html`. A link back is appreciated, never required.
+**可以去掉「Free template by Vantle」徽标吗？**
+可以。删除 `index.html` 中的 `<aside class="promo">` 区块即可。我们欢迎你保留回链，但这从不是必须的。
 
-**Will the 3D scene slow down my visitors' devices?**
-It's built to scale down. It caps render resolution, pauses when off screen, and lowers quality automatically on slower GPUs.
+**3D 场景会拖慢访客的设备吗？**
+它是按可降级来构建的：限制渲染分辨率、离开屏幕即暂停、在较弱的 GPU 上自动降低画质。
 
-**Who made this template?**
-[Vantle](https://vantle.studio/?utm_source=github&utm_medium=faq&utm_campaign=lumen), an independent design and development studio that builds brands, websites and software products.
+**这个模板是谁做的？**
+[Vantle](https://vantle.studio/?utm_source=github&utm_medium=faq&utm_campaign=lumen)，一家打造品牌、网站与软件产品的独立设计与开发工作室。
 
-**Can you build a custom version for my business?**
-Yes. Tell us about it at [hello@vantle.studio](mailto:hello@vantle.studio) or through the [project form](https://vantle.studio/?utm_source=github&utm_medium=faq&utm_campaign=lumen#start). We reply within one business day; a focused landing page usually takes 2 to 4 weeks.
+**能为我的业务做一个定制版本吗？**
+可以。发邮件到 [hello@vantle.studio](mailto:hello@vantle.studio)，或通过[项目表单](https://vantle.studio/?utm_source=github&utm_medium=faq&utm_campaign=lumen#start)告诉我们。我们会在一个工作日内回复；一张聚焦的落地页通常需要 2 到 4 周。
 
-## License
+## 许可证
 
-[MIT](LICENSE) © MiddleSugar7000. A ⭐ or a link back to [vantle.studio](https://vantle.studio/?utm_source=github&utm_medium=license&utm_campaign=lumen) is appreciated, never required.
+[MIT](LICENSE) © MiddleSugar7000。欢迎给个 ⭐ 或回链到 [vantle.studio](https://vantle.studio/?utm_source=github&utm_medium=license&utm_campaign=lumen)，但并不强求。
 
-Lumen is a fictional company; names, logos, quotes and numbers on the page are placeholder content. Portrait photos load from [Unsplash](https://unsplash.com) and should be replaced with your own.
+Lumen 是一个虚构公司；页面上的名称、Logo、引述与数据均为占位内容。人像照片来自 [Unsplash](https://unsplash.com)，建议替换为你自己的素材。
 
-## Built by Vantle
+## 由 Vantle 打造
 
-<a href="https://vantle.studio/?utm_source=github&utm_medium=readme&utm_campaign=lumen"><img src=".github/assets/vantle.svg" alt="Vantle, an independent design and development studio. A good idea, in full focus." width="100%"></a>
+<a href="https://vantle.studio/?utm_source=github&utm_medium=readme&utm_campaign=lumen"><img src=".github/assets/vantle.svg" alt="Vantle，一家独立设计与开发工作室。一个好想法，全程聚焦。" width="100%"></a>
 
 <p align="center">
-  <a href="https://vantle.studio/?utm_source=github&utm_medium=readme&utm_campaign=lumen#start"><img src=".github/assets/btn-vantle-start.svg" alt="Start a project with Vantle" height="54"></a>&nbsp;
-  <a href="https://vantle.studio/?utm_source=github&utm_medium=readme&utm_campaign=lumen#work"><img src=".github/assets/btn-vantle-work.svg" alt="See the work" height="54"></a>&nbsp;
-  <a href="mailto:hello@vantle.studio"><img src=".github/assets/btn-vantle-mail.svg" alt="Email hello@vantle.studio" height="54"></a>
+  <a href="https://vantle.studio/?utm_source=github&utm_medium=readme&utm_campaign=lumen#start"><img src=".github/assets/btn-vantle-start.svg" alt="与 Vantle 开始一个项目" height="54"></a>&nbsp;
+  <a href="https://vantle.studio/?utm_source=github&utm_medium=readme&utm_campaign=lumen#work"><img src=".github/assets/btn-vantle-work.svg" alt="查看作品" height="54"></a>&nbsp;
+  <a href="mailto:hello@vantle.studio"><img src=".github/assets/btn-vantle-mail.svg" alt="发邮件至 hello@vantle.studio" height="54"></a>
 </p>
 
-Lumen is a free template, and it comes from **[Vantle](https://vantle.studio/?utm_source=github&utm_medium=readme&utm_campaign=lumen)**, an independent design and development studio. We turn what you're building into a brand people remember, a website they understand, and a product they can use.
+Lumen 是一个免费模板，出自 **[Vantle](https://vantle.studio/?utm_source=github&utm_medium=readme&utm_campaign=lumen)** —— 一家独立设计与开发工作室。我们把你正在做的事，变成一个让人记住的品牌、一个看得懂的网站、一个用得上的产品。
 
-- **Brand & identity:** positioning, logo systems, typography, colour and full design systems
-- **Web design & 3D:** launch pages, Three.js and WebGL, GSAP motion, responsive builds
-- **Full-stack product:** SaaS platforms, dashboards, APIs, auth, payments and AI features
+- **品牌与视觉识别：** 定位、Logo 系统、字体、色彩以及完整设计系统
+- **网页设计与 3D：** 发布页、Three.js 与 WebGL、GSAP 动效、响应式实现
+- **全栈产品：** SaaS 平台、仪表盘、API、鉴权、支付与 AI 功能
 
-A focused landing page usually takes 2 to 4 weeks; a complete SaaS build 6 to 12. Tell us what you're making at [hello@vantle.studio](mailto:hello@vantle.studio) or through the [project form](https://vantle.studio/?utm_source=github&utm_medium=readme&utm_campaign=lumen#start), and we'll reply within one business day.
+一张聚焦的落地页通常需要 2 到 4 周；一个完整的 SaaS 产品需要 6 到 12 周。告诉我们你在做什么：[hello@vantle.studio](mailto:hello@vantle.studio)，或通过[项目表单](https://vantle.studio/?utm_source=github&utm_medium=readme&utm_campaign=lumen#start)，我们会在一个工作日内回复。
 
-<a href="https://vantle.studio/?utm_source=github&utm_medium=readme&utm_campaign=lumen#work"><img src=".github/assets/vantle-work.svg" alt="Selected work by Vantle: LIMEN, a watch that only runs while you scroll; Curtly, an LLM gateway with 58.2% average input reduction; Draftify, an AI coding workspace; VOLT Arc, an electric superbike launch page" width="100%"></a>
+<a href="https://vantle.studio/?utm_source=github&utm_medium=readme&utm_campaign=lumen#work"><img src=".github/assets/vantle-work.svg" alt="Vantle 精选作品：LIMEN，一块只在你滚动时才走的表；Curtly，一个平均输入降低 58.2% 的 LLM 网关；Draftify，一个 AI 编程工作区；VOLT Arc，一张电动超跑发布页" width="100%"></a>
 
-More free templates: [VOLT Arc](https://github.com/MiddleSugar7000/volt-arc-landing-page-template), a cinematic product launch page.
+更多免费模板：[VOLT Arc](https://github.com/MiddleSugar7000/volt-arc-landing-page-template)，一张电影质感的产品发布页。
 
-<p align="center"><sub>Keywords: free SaaS landing page template, AI landing page template, dark landing page template, Three.js landing page, WebGL landing page, GSAP ScrollTrigger template, Lenis smooth scroll, startup landing page, developer tool website template, HTML landing page, MIT website template.</sub></p>
-
-<!-- update: v1 -->
-<!-- update: v2 -->
-<!-- sync: 2026-10-08-r1 -->
-<!-- sync: 2026-10-08-r2 -->
-<!-- sync: 2026-10-08-r3 -->
-<!-- sync: 2026-10-09-1 -->
-<!-- sync: 2026-10-09-2 -->
-<!-- sync: 2026-10-09-3 -->
-<!-- sync: 2026-10-09-4 -->
-<!-- sync: 2026-10-10-1 -->
-<!-- sync: 2026-10-10-2 -->
-<!-- sync: 2026-10-10-3 -->
-<!-- sync: 2026-10-10-4 -->
-<!-- sync: 2026-10-11-1 -->
-<!-- sync: 2026-10-11-2 -->
-<!-- sync: 2026-10-11-3 -->
-<!-- sync: 2026-10-12-1 -->
-<!-- sync: 2026-10-12-2 -->
-<!-- sync: 2026-10-12-3 -->
-<!-- sync: 2026-10-12-4 -->
-<!-- sync: 2026-10-13-1 -->
-<!-- sync: 2026-10-13-2 -->
-<!-- sync: 2026-10-13-3 -->
-<!-- sync: 2026-10-14-1 -->
-<!-- sync: 2026-10-14-2 -->
-<!-- sync: 2026-10-14-3 -->
-<!-- sync: 2026-10-15-1 -->
-<!-- sync: 2026-10-15-2 -->
-<!-- sync: 2026-10-15-3 -->
-<!-- sync: 2026-10-15-4 -->
-<!-- sync: 2026-10-15-5 -->
-<!-- sync: 2026-10-15-6 -->
-<!-- sync: 2026-10-15-7 -->
-<!-- sync: 2026-10-15-8 -->
-<!-- sync: 2026-10-15-9 -->
-<!-- sync: 2026-10-15-10 -->
-<!-- sync: 2026-10-15-11 -->
-<!-- sync: 2026-10-15-12 -->
-<!-- sync: 2026-10-15-13 -->
-<!-- sync: 2026-10-16-1 -->
-<!-- sync: 2026-10-16-2 -->
-<!-- sync: 2026-10-16-3 -->
-<!-- sync: 2026-10-16-4 -->
-<!-- sync: 2026-10-16-5 -->
-<!-- sync: 2026-10-16-6 -->
-<!-- sync: 2026-10-16-7 -->
-<!-- sync: 2026-10-16-8 -->
-<!-- sync: 2026-10-16-9 -->
-<!-- sync: 2026-10-16-10 -->
-<!-- sync: 2026-10-16-11 -->
-<!-- sync: 2026-10-16-12 -->
-<!-- sync: 2026-10-16-13 -->
-<!-- sync: 2026-10-16-14 -->
-<!-- sync: 2026-10-16-15 -->
-<!-- sync: 2026-10-16-16 -->
-<!-- sync: 2026-10-16-17 -->
-<!-- sync: 2026-10-16-18 -->
-<!-- sync: 2026-10-16-19 -->
-<!-- sync: 2026-10-17-1 -->
-<!-- sync: 2026-10-17-2 -->
-<!-- sync: 2026-10-17-3 -->
-<!-- sync: 2026-10-17-4 -->
-<!-- sync: 2026-10-19-1 -->
-<!-- sync: 2026-10-19-2 -->
-<!-- sync: 2026-10-19-3 -->
-<!-- sync: 2026-10-19-4 -->
-<!-- sync: 2026-10-19-5 -->
-<!-- sync: 2026-10-22-1 -->
-<!-- sync: 2026-10-22-2 -->
-<!-- sync: 2026-10-22-3 -->
-<!-- sync: 2026-10-22-4 -->
-<!-- sync: 2026-10-23-1 -->
-<!-- sync: 2026-10-23-2 -->
-<!-- sync: 2026-10-23-3 -->
-<!-- sync: 2026-10-23-4 -->
-<!-- sync: 2026-10-23-5 -->
-<!-- sync: 2026-10-27-1 -->
-<!-- sync: 2026-10-27-2 -->
-<!-- sync: 2026-10-27-3 -->
-<!-- sync: 2026-10-27-4 -->
-<!-- sync: 2026-10-27-5 -->
-<!-- sync: 2026-10-27-6 -->
-<!-- sync: 2026-10-27-7 -->
-<!-- sync: 2026-10-28-1 -->
-<!-- sync: 2026-10-28-2 -->
-<!-- sync: 2026-10-28-3 -->
-<!-- sync: 2026-10-28-4 -->
-<!-- sync: 2026-10-29-1 -->
-<!-- sync: 2026-10-29-2 -->
-<!-- sync: 2026-10-29-3 -->
-<!-- sync: 2026-10-29-4 -->
-<!-- sync: 2026-10-31-1 -->
-<!-- sync: 2026-10-31-2 -->
-<!-- sync: 2026-10-31-3 -->
-<!-- sync: 2026-10-31-4 -->
-<!-- sync: 2026-10-31-5 -->
-<!-- sync: 2026-11-01-1 -->
-<!-- sync: 2026-11-01-2 -->
-<!-- sync: 2026-11-01-3 -->
-<!-- sync: 2026-11-01-4 -->
-<!-- sync: 2026-11-01-5 -->
-<!-- sync: 2026-11-01-6 -->
-<!-- sync: 2026-11-01-7 -->
-<!-- sync: 2026-11-01-8 -->
-<!-- sync: 2026-11-01-9 -->
-<!-- sync: 2026-11-02-1 -->
-<!-- sync: 2026-11-02-2 -->
-<!-- sync: 2026-11-02-3 -->
-<!-- sync: 2026-11-02-4 -->
-<!-- sync: 2026-11-02-5 -->
-<!-- sync: 2026-11-03-1 -->
-<!-- sync: 2026-11-03-2 -->
-<!-- sync: 2026-11-03-3 -->
-<!-- sync: 2026-11-03-4 -->
-<!-- sync: 2026-11-03-extra-1 -->
-<!-- sync: 2026-11-03-extra-2 -->
-<!-- sync: 2026-11-03-extra-3 -->
-<!-- sync: 2026-11-03-extra-4 -->
-<!-- sync: 2026-11-03-extra-5 -->
-<!-- sync: 2026-11-03-extra-6 -->
-<!-- sync: 2026-11-06-1 -->
-<!-- sync: 2026-11-06-2 -->
-<!-- sync: 2026-11-06-3 -->
-<!-- sync: 2026-11-06-4 -->
-<!-- sync: 2026-11-06-5 -->
-<!-- sync: 2026-11-06-6 -->
-<!-- sync: 2026-11-06-7 -->
-<!-- sync: 2026-11-06-8 -->
+<p align="center"><sub>关键词：免费 SaaS 落地页模板、AI 落地页模板、深色落地页模板、Three.js 落地页、WebGL 落地页、GSAP ScrollTrigger 模板、Lenis 平滑滚动、创业公司落地页、开发者工具网站模板、HTML 落地页、MIT 网站模板。</sub></p>

@@ -27,8 +27,8 @@
   --r-sm:8px; --r-md:12px; --r-lg:20px; --r-xl:28px;
   --gutter:clamp(16px,4vw,56px);
   --maxw:1240px;
-  --font:"Geist",ui-sans-serif,system-ui,sans-serif;
-  --serif:"Instrument Serif",ui-serif,Georgia,serif;
+  --font:"Geist","Noto Sans SC","PingFang SC","Microsoft YaHei",ui-sans-serif,system-ui,sans-serif;
+  --serif:"Instrument Serif","Noto Serif SC","Songti SC",ui-serif,Georgia,serif;
   --mono:"Geist Mono",ui-monospace,monospace;
 }
 

@@ -1,13 +1,13 @@
-# Lumen: Free SaaS Landing Page Template
+# Lumen：免费 SaaS 落地页模板
 
-> Lumen is a free, MIT-licensed HTML landing page template for SaaS, AI and developer-tool products, made by Vantle (independent design and development studio, https://vantle.studio). Dark "Ember" design for a fictional AI inference cloud, with one persistent scroll-driven Three.js scene (liquid chrome core, glass ring, 11k particles morphing halo -> globe -> GPU fabric), GSAP ScrollTrigger + SplitText, Lenis smooth scroll, a bento grid of live mini UIs, console mockup, pricing and FAQ. No build step.
+> Lumen 是一个免费、MIT 协议的 HTML 落地页模板，面向 SaaS、AI 与开发者工具类产品，由 Vantle（独立设计与开发工作室，https://vantle.studio）制作。深色「Ember」设计，服务于一个虚构的 AI 推理云；包含一个常驻的滚动驱动 Three.js 场景（液态铬内核、玻璃光环、11k 粒子完成 光晕 -> 地球 -> GPU 算力网 的形变）、GSAP ScrollTrigger + SplitText、Lenis 平滑滚动、由实时小 UI 组成的 Bento 网格、控制台模拟界面、定价与 FAQ。无需构建步骤。
 
-## Use
-- Live demo: https://middlesugar7000.github.io/lumen-saas-landing-page-template/
-- Source: https://github.com/MiddleSugar7000/lumen-saas-landing-page-template
-- Start: serve the folder (npx serve . or python -m http.server); the 3D scene is an ES module
-- Customize: CSS variables on :root in css/style.css; copy in index.html; 3D scene in js/scene.js; motion and mini UIs in js/main.js
+## 使用
+- 在线演示：https://middlesugar7000.github.io/lumen-saas-landing-page-template/
+- 源码：https://github.com/MiddleSugar7000/lumen-saas-landing-page-template
+- 启动：把文件夹跑成本地服务（npx serve . 或 python -m http.server）；3D 场景是 ES 模块，不能直接用 file:// 打开
+- 自定义：css/style.css 中 :root 的 CSS 变量；文案在 index.html；3D 场景在 js/scene.js；动效与小 UI 在 js/main.js
 
-## Author
-- Vantle is an independent design and development studio: brand and identity, web design and 3D, full-stack SaaS, APIs and AI features. Focused landing pages usually take 2 to 4 weeks, complete SaaS builds 6 to 12.
-- Contact: https://vantle.studio/#start or hello@vantle.studio (reply within one business day)
+## 作者
+- Vantle 是一家独立设计与开发工作室：品牌与视觉识别、网页设计与 3D、全栈 SaaS、API 与 AI 功能。聚焦型落地页通常需要 2 到 4 周，完整 SaaS 产品需要 6 到 12 周。
+- 联系方式：https://vantle.studio/#start 或 hello@vantle.studio（一个工作日内回复）

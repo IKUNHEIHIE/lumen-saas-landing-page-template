@@ -1,30 +1,30 @@
 <!doctype html>
 <!--
-  Lumen: free SaaS / AI landing page template (HTML, GSAP, Lenis, Three.js). MIT licensed.
-  Designed & built by Vantle, an independent design and development studio: https://vantle.studio
-  Want a custom landing page for your product? https://vantle.studio/#start
+  Lumen: 免费 SaaS / AI 落地页模板（HTML、GSAP、Lenis、Three.js），MIT 协议。
+  由独立设计与开发工作室 Vantle 设计并构建：https://vantle.studio
+  想为你的产品定制落地页？https://vantle.studio/#start
 -->
-<html lang="en">
+<html lang="zh-CN">
 <head>
 <meta charset="utf-8">
-<!-- Responsive mobile viewport configuration: enforces 1:1 initial scaling without artificial zooming -->
+<!-- 响应式移动视口配置：强制 1:1 初始缩放，不做人工放大 -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Lumen · Inference at the speed of light</title>
-<meta name="description" content="Lumen runs your AI models on 18,000 GPUs across 42 regions and routes every request to the nearest warm replica. Median latency 38 ms.">
+<title>Lumen · 光速推理</title>
+<meta name="description" content="Lumen 在横跨 42 个区域的 18,000 块 GPU 上运行你的 AI 模型，并将每个请求路由到最近的热备节点。中位延迟仅 38 ms。">
 <meta name="theme-color" content="#07080b">
 <meta name="author" content="Vantle (https://vantle.studio)">
-<meta property="og:title" content="Lumen · Free SaaS landing page template">
-<meta property="og:description" content="Dark, cinematic SaaS / AI landing page with a scroll-driven Three.js scene. Free and MIT licensed, by Vantle.">
+<meta property="og:title" content="Lumen · 免费 SaaS 落地页模板">
+<meta property="og:description" content="深色电影质感的 SaaS / AI 落地页，附带滚动驱动的 Three.js 场景。免费且基于 MIT 协议，由 Vantle 出品。">
 <meta property="og:type" content="website">
-<!-- Scalable vector favicon encoded directly as SVG data URI for instant crisp resolution on Retina displays -->
+<!-- 以 SVG data URI 内嵌的可缩放矢量图标，在 Retina 屏幕上即刻呈现清晰分辨率 -->
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='11' fill='none' stroke='%23ff6a2b' stroke-width='3'/%3E%3Ccircle cx='16' cy='16' r='4' fill='%23ff6a2b'/%3E%3C/svg%3E">
-<!-- Preconnect hints establish early socket, DNS, and TLS handshakes to font content delivery networks -->
+<!-- 预连接提示：提前与字体 CDN 完成 socket、DNS 与 TLS 握手 -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400&family=Instrument+Serif:ital@1&family=Noto+Sans+SC:wght@400;500;600&family=Noto+Serif+SC:wght@400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <script>document.documentElement.classList.add('js')</script>
-<!-- ES Module Import Map: resolves bare specifiers for Three.js and addons directly in native browser runtimes -->
+<!-- ES Module Import Map：在原生浏览器运行时中直接解析 Three.js 及其插件的裸模块标识符 -->
 <script type="importmap">
 { "imports": {
   "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
@@ -37,40 +37,40 @@
 <canvas id="gl" aria-hidden="true"></canvas>
 <div class="grain" aria-hidden="true"></div>
 
-<!-- ============ NAV ============ -->
-<!-- WAI-ARIA Landmark Header: encapsulates primary branding, navigation links, and call-to-action controls -->
+<!-- ============ 导航栏 ============ -->
+<!-- WAI-ARIA 地标 Header：承载品牌标识、导航链接与行动号召控件 -->
 <header class="nav" id="nav">
-  <a href="#top" class="brand" aria-label="Lumen home">
+  <a href="#top" class="brand" aria-label="Lumen 首页">
     <svg class="brand-mark" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="11.5" stroke="url(#bm)" stroke-width="2.4"/><circle cx="16" cy="16" r="4.2" fill="#ff6a2b"/><defs><linearGradient id="bm" x1="4" y1="4" x2="28" y2="28"><stop stop-color="#fff"/><stop offset="1" stop-color="#ff6a2b"/></linearGradient></defs></svg>
     Lumen
   </a>
-  <nav class="nav-links" aria-label="Primary">
-    <a href="#platform">Platform</a>
-    <a href="#features">Features</a>
-    <a href="#console">Console</a>
-    <a href="#pricing">Pricing</a>
-    <a href="#faq">Docs</a>
+  <nav class="nav-links" aria-label="主导航">
+    <a href="#platform">平台</a>
+    <a href="#features">功能特性</a>
+    <a href="#console">控制台</a>
+    <a href="#pricing">定价</a>
+    <a href="#faq">文档</a>
   </nav>
   <div class="nav-cta">
-    <a href="#" class="link">Sign in</a>
-    <a href="#cta" class="btn btn-primary btn-sm magnetic">Start deploying</a>
+    <a href="#" class="link">登录</a>
+    <a href="#cta" class="btn btn-primary btn-sm magnetic">开始部署</a>
   </div>
 </header>
 
 <main id="top">
 
-<!-- ============ HERO ============ -->
+<!-- ============ 首屏 ============ -->
 <section class="hero" data-gl>
   <div class="wrap hero-inner">
     <div class="hero-copy">
-      <a href="#platform" class="launch" data-hero-fade><b>New</b> Lumen Edge v4: 11 new regions
+      <a href="#platform" class="launch" data-hero-fade><b>全新</b> Lumen Edge v4：新增 11 个区域
         <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 3.5 10.5 8 6 12.5"/></svg></a>
-      <h1 class="display">Inference at the <em>speed of light.</em></h1>
-      <p class="lead" data-hero-fade>Lumen runs your models on 18,000 GPUs across 42 regions and sends every request to the nearest warm replica. No cold starts. No capacity planning. Just answers, fast.</p>
+      <h1 class="display">以<em>光速</em>完成推理。</h1>
+      <p class="lead" data-hero-fade>Lumen 在横跨 42 个区域的 18,000 块 GPU 上运行你的模型，并将每个请求发送到最近的热备节点。没有冷启动，无需容量规划，只有飞速返回的答案。</p>
       <div class="hero-ctas" data-hero-fade>
-        <a href="#cta" class="btn btn-primary btn-lg magnetic">Start deploying free
+        <a href="#cta" class="btn btn-primary btn-lg magnetic">免费开始部署
           <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
-        <a href="#console" class="btn btn-ghost btn-lg">See the console</a>
+        <a href="#console" class="btn btn-ghost btn-lg">查看控制台</a>
       <div class="proof">
         <div class="avatars">
           <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&h=96&fit=crop&crop=faces" alt="">
@@ -79,31 +79,31 @@
           <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=96&h=96&fit=crop&crop=faces" alt="">
         </div>
         <div>
-          <div class="stars" aria-label="4.9 out of 5">
+          <div class="stars" aria-label="4.9 分（满分 5 分）">
             <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 1.2l2 4.3 4.7.5-3.5 3.2 1 4.6L8 11.5l-4.2 2.3 1-4.6L1.3 6l4.7-.5z"/></svg><svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 1.2l2 4.3 4.7.5-3.5 3.2 1 4.6L8 11.5l-4.2 2.3 1-4.6L1.3 6l4.7-.5z"/></svg><svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 1.2l2 4.3 4.7.5-3.5 3.2 1 4.6L8 11.5l-4.2 2.3 1-4.6L1.3 6l4.7-.5z"/></svg><svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 1.2l2 4.3 4.7.5-3.5 3.2 1 4.6L8 11.5l-4.2 2.3 1-4.6L1.3 6l4.7-.5z"/></svg><svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 1.2l2 4.3 4.7.5-3.5 3.2 1 4.6L8 11.5l-4.2 2.3 1-4.6L1.3 6l4.7-.5z"/></svg>
           </div>
-          <strong>2,400+ AI teams</strong> ship on Lumen
+          <strong>2,400+ 支 AI 团队</strong>正在 Lumen 上构建
         </div>
       </div>
       </div>
     </div>
 
     <div class="telemetry" data-hero-fade>
-      <div><span><i class="live"></i>Requests served today</span><b id="reqs">4,812,604,113</b></div>
-      <div><span>Global p50 latency</span><b>38<small>ms</small></b></div>
-      <div><span>Regions online</span><b>42<small>/ 42</small></b></div>
-      <div><span>Cold starts, last 90 days</span><b>0</b></div>
+      <div><span><i class="live"></i>今日已服务请求</span><b id="reqs">4,812,604,113</b></div>
+      <div><span>全球 P50 延迟</span><b>38<small>ms</small></b></div>
+      <div><span>在线区域</span><b>42<small>/ 42</small></b></div>
+      <div><span>近 90 天冷启动次数</span><b>0</b></div>
     </div>
   </div>
-  <div class="scroll-cue" aria-hidden="true"><i></i>Scroll</div>
+  <div class="scroll-cue" aria-hidden="true"><i></i>向下滚动</div>
 </section>
 
-<!-- ============ LOGOS ============ -->
-<section class="logos" data-gl aria-label="Customers">
-  <p>Powering production AI at teams that cannot afford to wait</p>
+<!-- ============ 客户 LOGO 墙 ============ -->
+<section class="logos" data-gl aria-label="客户">
+  <p>为分秒必争的团队驱动生产级 AI</p>
   <div class="marquee">
     <div class="marquee-track">
-      <!-- set 1 -->
+      <!-- 第一组 -->
       <span class="logo"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 22 20H2z"/></svg>Northwind</span>
       <span class="logo" style="font-weight:600;letter-spacing:-.04em"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 4v16M12 4v16M19 4v16"/></svg>parallel</span>
       <span class="logo serif" style="font-size:25px">Vesper AI</span>
@@ -112,7 +112,7 @@
       <span class="logo" style="font-weight:600;letter-spacing:-.05em"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6c4 0 4 12 8 12s4-12 8-12"/><path d="M4 18c4 0 4-12 8-12s4 12 8 12" opacity=".5"/></svg>helix</span>
       <span class="logo serif" style="font-size:24px">Arcadia</span>
       <span class="logo" style="font-weight:500;letter-spacing:-.02em"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 0 20V2z"/></svg>Quanta</span>
-      <!-- set 2 (duplicate for seamless loop) -->
+      <!-- 第二组（无缝循环用副本） -->
       <span class="logo" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 22 20H2z"/></svg>Northwind</span>
       <span class="logo" aria-hidden="true" style="font-weight:600;letter-spacing:-.04em"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 4v16M12 4v16M19 4v16"/></svg>parallel</span>
       <span class="logo serif" aria-hidden="true" style="font-size:25px">Vesper AI</span>
@@ -125,60 +125,60 @@
   </div>
 </section>
 
-<!-- ============ STATEMENT ============ -->
+<!-- ============ 宣言 ============ -->
 <section class="statement" data-gl>
   <div class="wrap">
-    <span class="eyebrow">Why we built Lumen</span>
-    <p class="fill-text">The fastest model in the world is useless if it lives <em>three oceans away</em> from the people using it. So we put yours everywhere, and kept it warm.</p>
+    <span class="eyebrow">我们为什么做 Lumen</span>
+    <p class="fill-text">再快的模型，如果与使用者<em>隔着三片大洋</em>，也毫无用处。所以我们把你的模型部署到每个角落，并让它始终温热。</p>
     <div class="statement-foot">
       <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=96&h=96&fit=crop&crop=faces" alt="">
-      <span><b style="color:var(--fg);font-weight:500">Daniel Osei</b><br>Co-founder &amp; CEO</span>
+      <span><b style="color:var(--fg);font-weight:500">Daniel Osei</b><br>联合创始人 &amp; CEO</span>
     </div>
   </div>
 </section>
 
-<!-- ============ MORPH (pinned 3D story) ============ -->
+<!-- ============ 3D 故事（钉住滚动） ============ -->
 <section class="morph" id="platform" data-gl>
   <div class="wrap morph-inner">
     <div class="stages">
       <div class="stage on" data-stage="0">
-        <span class="num">01 / Bring any model</span>
-        <h3>Your weights. <em>Our light.</em></h3>
-        <p>Open weights, fine-tunes or your own architecture. Point Lumen at a Hugging Face ID or a container and it compiles the model for every chip it lands on.</p>
-        <div class="chips"><span class="chip"><i></i>Llama 4</span><span class="chip"><i></i>Qwen 3</span><span class="chip"><i></i>Mistral Large</span><span class="chip"><i></i>Your fine-tune</span></div>
+        <span class="num">01 / 接入任意模型</span>
+        <h3>你的权重，<em>我们的光。</em></h3>
+        <p>开源权重、微调版本或你自研的架构。指向一个 Hugging Face ID 或一个容器，Lumen 就会为每一种落地芯片编译好模型。</p>
+        <div class="chips"><span class="chip"><i></i>Llama 4</span><span class="chip"><i></i>Qwen 3</span><span class="chip"><i></i>Mistral Large</span><span class="chip"><i></i>你的微调模型</span></div>
       </div>
       <div class="stage" data-stage="1">
-        <span class="num">02 / Run it everywhere</span>
-        <h3>42 regions. <em>One endpoint.</em></h3>
-        <p>Six continents, one URL. Every request lands on the closest warm replica, so a user in Lagos never waits for a round trip to Virginia.</p>
-        <div class="stat"><b>9 ms</b><span>median network hop<br>to the nearest replica</span></div>
+        <span class="num">02 / 随处运行</span>
+        <h3>42 个区域，<em>一个端点。</em></h3>
+        <p>六大洲，一个 URL。每个请求都落在最近的热备节点上，拉各斯的用户再也不用等一次绕到弗吉尼亚的往返。</p>
+        <div class="stat"><b>9 ms</b><span>到最近热备节点的<br>中位网络跳转耗时</span></div>
       </div>
       <div class="stage" data-stage="2">
-        <span class="num">03 / Scale on the fabric</span>
-        <h3>18,000 GPUs <em>that act as one.</em></h3>
-        <p>Lumen watches demand in every region and moves capacity to where traffic is rising, minutes before it arrives. You pay for tokens, not idle cards.</p>
-        <div class="stat"><b>0</b><span>cold starts across the<br>fleet in the last 90 days</span></div>
+        <span class="num">03 / 在算力网络上扩展</span>
+        <h3>18,000 块 GPU，<em>如同一台机器。</em></h3>
+        <p>Lumen 观测每个区域的需求，在流量上涨前几分钟把算力调度过去。你为 token 付费，不为闲置的卡付费。</p>
+        <div class="stat"><b>0</b><span>近 90 天全网<br>冷启动次数</span></div>
       </div>
     </div>
   </div>
   <div class="hud" aria-hidden="true">
-    <span class="tag" data-hud="0" style="left:-6%;top:6%"><i style="background:var(--accent)"></i><b>llama-4-70b</b> compiling for H200</span>
-    <span class="tag" data-hud="0" style="right:-4%;bottom:6%"><i></i><b>3.2 GB</b> weights streamed in 4.1 s</span>
+    <span class="tag" data-hud="0" style="left:-6%;top:6%"><i style="background:var(--accent)"></i><b>llama-4-70b</b> 正在为 H200 编译</span>
+    <span class="tag" data-hud="0" style="right:-4%;bottom:6%"><i></i><b>3.2 GB</b> 权重 4.1 秒传输完成</span>
     <span class="tag" data-hud="1" style="left:0;top:22%"><i></i><b>fra-1</b> 7 ms</span>
     <span class="tag" data-hud="1" style="right:2%;top:40%"><i></i><b>sin-2</b> 11 ms</span>
     <span class="tag" data-hud="1" style="left:12%;bottom:12%"><i></i><b>gru-1</b> 9 ms</span>
-    <span class="tag warm" data-hud="2" style="left:2%;top:14%"><i></i><b>+240 GPUs</b> shifted to ap-south</span>
-    <span class="tag" data-hud="2" style="right:0;bottom:16%"><i></i>Fleet utilisation <b>91%</b></span>
+    <span class="tag warm" data-hud="2" style="left:2%;top:14%"><i></i><b>+240 块 GPU</b> 已调往 ap-south</span>
+    <span class="tag" data-hud="2" style="right:0;bottom:16%"><i></i>集群利用率 <b>91%</b></span>
   </div>
   <div class="rail" aria-hidden="true"><span id="railNum">01</span><span class="rail-bar"><i id="railBar"></i></span><span>03</span></div>
 </section>
 
-<!-- ============ FEATURES / BENTO ============ -->
+<!-- ============ 功能特性 / BENTO 网格 ============ -->
 <section class="features solid edge" id="features">
   <div class="wrap">
     <div class="sec-head split">
-      <h2 class="h2" data-split>Everything between your model and <em>a million users.</em></h2>
-      <p class="lead" data-reveal-one>Routing, autoscaling, observability and guardrails ship in the box. You write the model. Lumen handles the planet.</p>
+      <h2 class="h2" data-split>从你的模型到<em>百万用户。</em></h2>
+      <p class="lead" data-reveal-one>路由、自动扩缩容、可观测性和安全护栏全都开箱即用。你负责写模型，Lumen 负责整个星球。</p>
     </div>
 
     <div class="bento" data-reveal>
@@ -186,8 +186,8 @@
         <div class="lat">
           <div class="panel lat-chart">
             <div class="lat-top">
-              <div><span>Global p50, live</span><br><b id="latNum">38<small>ms</small></b></div>
-              <span class="pill-ok"><i class="live"></i>All regions healthy</span>
+              <div><span>全球 P50 延迟（实时）</span><br><b id="latNum">38<small>ms</small></b></div>
+              <span class="pill-ok"><i class="live"></i>所有区域健康</span>
             </div>
             <svg viewBox="0 0 400 120" preserveAspectRatio="none" aria-hidden="true">
               <defs><linearGradient id="latFill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff6a2b" stop-opacity=".35"/><stop offset="1" stop-color="#ff6a2b" stop-opacity="0"/></linearGradient></defs>
@@ -196,14 +196,14 @@
             </svg>
           </div>
           <ul class="panel regions">
-            <li>Frankfurt <span>7 ms</span><em style="--w:22%"></em></li>
-            <li>Virginia <span>12 ms</span><em style="--w:34%"></em></li>
-            <li>Singapore <span>11 ms</span><em style="--w:30%"></em></li>
-            <li>São Paulo <span>9 ms</span><em style="--w:26%"></em></li>
-            <li>Lagos <span>14 ms</span><em style="--w:40%"></em></li>
+            <li>法兰克福 <span>7 ms</span><em style="--w:22%"></em></li>
+            <li>弗吉尼亚 <span>12 ms</span><em style="--w:34%"></em></li>
+            <li>新加坡 <span>11 ms</span><em style="--w:30%"></em></li>
+            <li>圣保罗 <span>9 ms</span><em style="--w:26%"></em></li>
+            <li>拉各斯 <span>14 ms</span><em style="--w:40%"></em></li>
           </ul>
         </div>
-        <div class="txt"><h3>Sub-50 ms, on every continent</h3><p>Anycast routing picks the nearest warm replica for every request. Latency is a property of the platform, not of where you deployed.</p></div>
+        <div class="txt"><h3>每个大洲都在 50 ms 以内</h3><p>Anycast 路由为每个请求选择最近的热备节点。延迟是平台自带的属性，与你部署在哪里无关。</p></div>
       </article>
 
       <article class="cell spot s2">
@@ -213,9 +213,9 @@
             <circle class="ring-arc" cx="80" cy="80" r="70" fill="none" stroke="url(#ringG)" stroke-width="10" stroke-linecap="round"/>
             <defs><linearGradient id="ringG" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffb487"/><stop offset="1" stop-color="#ff6a2b"/></linearGradient></defs>
           </svg>
-          <div class="val"><div><b>99.995%</b><span>uptime, trailing year</span></div></div>
+          <div class="val"><div><b>99.995%</b><span>过去一年可用性</span></div></div>
         </div></div>
-        <div class="txt"><h3>Fails over before you notice</h3><p>Region down? Traffic reroutes in under 400 ms.</p></div>
+        <div class="txt"><h3>在你察觉之前完成故障转移</h3><p>区域宕机？流量会在 400 ms 内重新路由。</p></div>
       </article>
 
       <article class="cell spot s2">
@@ -242,55 +242,55 @@
             <circle r="3" fill="#fff"><animateMotion dur="2.4s" repeatCount="indefinite" begin="2s"><mpath href="#w6"/></animateMotion></circle>
           </svg>
         </div>
-        <div class="txt"><h3>Model router</h3><p>Split traffic across models and versions by cost, latency or a rule you write.</p></div>
+        <div class="txt"><h3>模型路由器</h3><p>按成本、延迟或自定义规则，在多个模型和版本之间分流流量。</p></div>
       </article>
 
       <article class="cell spot s2">
-        <div class="panel code" id="codeType" aria-label="lumen deploy example"></div>
-        <div class="txt"><h3>Deploy in one command</h3><p>From a model ID to a global endpoint in under two minutes.</p></div>
+        <div class="panel code" id="codeType" aria-label="lumen 部署示例"></div>
+        <div class="txt"><h3>一条命令完成部署</h3><p>从模型 ID 到全球端点，不到两分钟。</p></div>
       </article>
 
       <article class="cell spot s2">
         <div class="panel" style="flex:1;display:flex;flex-direction:column">
           <div class="bars" id="bars"></div>
-          <div class="bars-meta"><span>GPUs in eu-west</span><b>412 → 655</b></div>
+          <div class="bars-meta"><span>eu-west 区域 GPU 数</span><b>412 → 655</b></div>
         </div>
-        <div class="txt"><h3>Predictive autoscaling</h3><p>Capacity arrives minutes before your traffic does.</p></div>
+        <div class="txt"><h3>预测式自动扩缩容</h3><p>算力总比你的流量早几分钟到位。</p></div>
       </article>
 
       <article class="cell spot s3">
         <div class="leak"></div>
         <div class="panel toggles" id="toggles">
-          <div class="tg">Zero data retention <span class="sw on"></span></div>
-          <div class="tg">Private VPC peering <span class="sw on"></span></div>
-          <div class="tg">EU-only routing <span class="sw"></span></div>
-          <div class="tg">Customer-managed keys <span class="sw on"></span></div>
+          <div class="tg">零数据留存 <span class="sw on"></span></div>
+          <div class="tg">私有 VPC 对等连接 <span class="sw on"></span></div>
+          <div class="tg">仅欧盟区域路由 <span class="sw"></span></div>
+          <div class="tg">客户自管密钥 <span class="sw on"></span></div>
         </div>
-        <div class="txt"><h3>Private by default</h3><p>Prompts and outputs are never stored or used for training. SOC 2 Type II, HIPAA and GDPR from day one.</p></div>
+        <div class="txt"><h3>默认即私有</h3><p>提示词与输出绝不会被存储，也不会用于训练。从第一天起就支持 SOC 2 Type II、HIPAA 与 GDPR。</p></div>
       </article>
 
       <article class="cell spot s3">
         <div class="panel budget">
-          <div class="budget-top"><b id="spend">$6,412</b><span>of $10,000 monthly guard</span></div>
+          <div class="budget-top"><b id="spend">$6,412</b><span>/ $10,000 月度预算上限</span></div>
           <div class="meter"><i></i><u></u></div>
           <div class="budget-rows">
-            <div><span>Cost per 1M tokens</span><b>$0.19</b></div>
-            <div><span>Saved vs. dedicated GPUs</span><b style="color:var(--ok)">−61%</b></div>
+            <div><span>每百万 token 成本</span><b>$0.19</b></div>
+            <div><span>相比专用 GPU 节省</span><b style="color:var(--ok)">−61%</b></div>
           </div>
         </div>
-        <div class="txt"><h3>Spend guard</h3><p>Hard budgets per project, alerts at 85%, and a per-token bill you can actually read.</p></div>
+        <div class="txt"><h3>支出护栏</h3><p>按项目设硬预算、85% 时告警，账单按 token 计费、一眼就能看懂。</p></div>
       </article>
     </div>
   </div>
 </section>
 
-<!-- ============ CONSOLE MOCKUP ============ -->
+<!-- ============ 控制台模拟 ============ -->
 <section class="console solid" id="console">
   <div class="wrap">
     <div class="sec-head center">
-      <span class="eyebrow">The console</span>
-      <h2 class="h2" data-split>One window onto <em>every token.</em></h2>
-      <p class="lead" data-reveal-one>Live traffic, cost and quality for every model in every region. Built for the on-call engineer at 3 a.m. and the CFO at 9.</p>
+      <span class="eyebrow">控制台</span>
+      <h2 class="h2" data-split>一扇窗口看清<em>每个 token。</em></h2>
+      <p class="lead" data-reveal-one>实时查看每个区域、每个模型的流量、成本与质量。为凌晨三点的值班工程师而建，也为早上九点的 CFO 而建。</p>
     </div>
 
     <div class="mock-stage">
@@ -301,216 +301,216 @@
         <div class="mock-body">
           <aside class="mock-side">
             <div class="ws"><i></i>Acme AI</div>
-            <a class="act"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="5" height="5" rx="1"/><rect x="9" y="2" width="5" height="5" rx="1"/><rect x="2" y="9" width="5" height="5" rx="1"/><rect x="9" y="9" width="5" height="5" rx="1"/></svg>Overview</a>
-            <a><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 2 14 5v6l-6 3-6-3V5z"/><path d="M2 5l6 3 6-3M8 8v6"/></svg>Deployments</a>
-            <a><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M2 8h12M8 2c2 2 2 10 0 12M8 2c-2 2-2 10 0 12"/></svg>Regions</a>
-            <a><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 13 6 8l3 3 5-7"/></svg>Traces</a>
-            <a><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 2v12M4 5h6a2 2 0 0 1 0 4H6a2 2 0 0 0 0 4h6"/></svg>Billing</a>
+            <a class="act"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="5" height="5" rx="1"/><rect x="9" y="2" width="5" height="5" rx="1"/><rect x="2" y="9" width="5" height="5" rx="1"/><rect x="9" y="9" width="5" height="5" rx="1"/></svg>概览</a>
+            <a><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 2 14 5v6l-6 3-6-3V5z"/><path d="M2 5l6 3 6-3M8 8v6"/></svg>部署</a>
+            <a><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M2 8h12M8 2c2 2 2 10 0 12M8 2c-2 2-2 10 0 12"/></svg>区域</a>
+            <a><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 13 6 8l3 3 5-7"/></svg>链路追踪</a>
+            <a><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 2v12M4 5h6a2 2 0 0 1 0 4H6a2 2 0 0 0 0 4h6"/></svg>计费</a>
             <div class="sep"></div>
-            <small>MODELS</small>
+            <small>模型</small>
             <a>llama-4-70b</a><a>qwen-3-32b</a><a>acme-support-ft</a>
           </aside>
           <div class="mock-main">
-            <div class="mock-h"><h4>Production <span>last 24 hours</span></h4><div class="mock-tabs"><span>1h</span><span class="act">24h</span><span>7d</span><span>30d</span></div></div>
+            <div class="mock-h"><h4>生产环境 <span>近 24 小时</span></h4><div class="mock-tabs"><span>1h</span><span class="act">24h</span><span>7d</span><span>30d</span></div></div>
             <div class="kpis">
-              <div class="kpi"><span>Requests</span><b>182.4M</b><em>+12.4%</em></div>
-              <div class="kpi"><span>p50 latency</span><b>36 ms</b><em>−4 ms</em></div>
-              <div class="kpi"><span>Tokens out</span><b>9.21B</b><em>+8.1%</em></div>
-              <div class="kpi"><span>Cost</span><b>$1,742</b><em>−18%</em></div>
+              <div class="kpi"><span>请求数</span><b>182.4M</b><em>+12.4%</em></div>
+              <div class="kpi"><span>P50 延迟</span><b>36 ms</b><em>−4 ms</em></div>
+              <div class="kpi"><span>输出 token</span><b>9.21B</b><em>+8.1%</em></div>
+              <div class="kpi"><span>成本</span><b>$1,742</b><em>−18%</em></div>
             </div>
             <div class="chart-card">
-              <header><b>Traffic by region</b><div class="legend"><span><i style="background:#ff6a2b"></i>EU</span><span><i style="background:#ffb487"></i>Americas</span><span><i style="background:#5b6270"></i>APAC</span></div></header>
+              <header><b>各区域流量</b><div class="legend"><span><i style="background:#ff6a2b"></i>欧洲</span><span><i style="background:#ffb487"></i>美洲</span><span><i style="background:#5b6270"></i>亚太</span></div></header>
               <svg id="trafficChart" viewBox="0 0 800 170" preserveAspectRatio="none" aria-hidden="true"></svg>
             </div>
             <div class="table">
-              <div class="tr th"><span>Deployment</span><span>Status</span><span>Regions</span><span>p50</span><span>Version</span></div>
-              <div class="tr"><span>llama-4-70b</span><span class="st"><i></i>Serving</span><span>42</span><span>34 ms</span><span class="mono">v12</span></div>
-              <div class="tr"><span>acme-support-ft</span><span class="st warm"><i></i>Rolling out</span><span>18 / 42</span><span>29 ms</span><span class="mono">v4</span></div>
-              <div class="tr"><span>qwen-3-32b</span><span class="st"><i></i>Serving</span><span>27</span><span>22 ms</span><span class="mono">v7</span></div>
+              <div class="tr th"><span>部署</span><span>状态</span><span>区域</span><span>P50</span><span>版本</span></div>
+              <div class="tr"><span>llama-4-70b</span><span class="st"><i></i>运行中</span><span>42</span><span>34 ms</span><span class="mono">v12</span></div>
+              <div class="tr"><span>acme-support-ft</span><span class="st warm"><i></i>灰度发布中</span><span>18 / 42</span><span>29 ms</span><span class="mono">v4</span></div>
+              <div class="tr"><span>qwen-3-32b</span><span class="st"><i></i>运行中</span><span>27</span><span>22 ms</span><span class="mono">v7</span></div>
             </div>
           </div>
         </div>
         <div class="mock-fade"></div>
       </div>
-      <div class="float f1" data-speed="1.4"><span class="ic"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8.5 6.5 12 13 4.5"/></svg></span><div><b>Deploy succeeded</b><span>acme-support-ft v4 · 42 regions</span></div></div>
-      <div class="float f2" data-speed="-1.2"><span class="ic warm"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 13V3M4 7l4-4 4 4"/></svg></span><div><b>+120 GPUs in eu-west</b><span>Scaled ahead of a 3.1× spike</span></div></div>
+      <div class="float f1" data-speed="1.4"><span class="ic"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8.5 6.5 12 13 4.5"/></svg></span><div><b>部署成功</b><span>acme-support-ft v4 · 42 个区域</span></div></div>
+      <div class="float f2" data-speed="-1.2"><span class="ic warm"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 13V3M4 7l4-4 4 4"/></svg></span><div><b>eu-west 新增 120 块 GPU</b><span>在 3.1 倍流量峰值前完成扩容</span></div></div>
     </div>
   </div>
 </section>
 
-<!-- ============ STATS ============ -->
+<!-- ============ 数据统计 ============ -->
 <section class="stats solid alt">
   <div class="giant" aria-hidden="true" data-speed="0.6">38ms</div>
   <div class="wrap stat-grid" data-reveal>
-    <div><b><span data-count="4.8" data-dec="1">0</span><sup>B</sup></b><p>requests served every single day</p></div>
-    <div><b><span data-count="42">0</span></b><p>regions across six continents</p></div>
-    <div><b><span data-count="18000">0</span></b><p>GPUs behaving like one machine</p></div>
-    <div><b><span data-count="61">0</span><sup>%</sup></b><p>average saving vs. dedicated clusters</p></div>
+    <div><b><span data-count="4.8" data-dec="1">0</span><sup>B</sup></b><p>每天处理的请求数</p></div>
+    <div><b><span data-count="42">0</span></b><p>横跨六大洲的区域</p></div>
+    <div><b><span data-count="18000">0</span></b><p>块 GPU 协同一如一台机器</p></div>
+    <div><b><span data-count="61">0</span><sup>%</sup></b><p>相比专属集群的平均节省</p></div>
   </div>
 </section>
 
-<!-- ============ STEPS (stacking cards) ============ -->
+<!-- ============ 使用步骤（堆叠卡片） ============ -->
 <section class="steps solid">
   <div class="wrap">
     <div class="sec-head">
-      <span class="eyebrow">How it works</span>
-      <h2 class="h2" data-split>From model ID to <em>planet-scale</em> in an afternoon.</h2>
+      <span class="eyebrow">工作原理</span>
+      <h2 class="h2" data-split>一个下午，从模型 ID 到<em>行星级规模。</em></h2>
     </div>
     <div class="stack">
       <article class="stack-card">
         <div>
-          <span class="idx">Step 01</span>
-          <h3>Connect your <em>model.</em></h3>
-          <p>Paste a Hugging Face ID, push a container, or upload raw weights. Lumen benchmarks it on six chip types and picks the cheapest one that meets your latency target.</p>
+          <span class="idx">步骤 01</span>
+          <h3>接入你的<em>模型。</em></h3>
+          <p>粘贴一个 Hugging Face ID、推送一个容器，或直接上传原始权重。Lumen 会在六种芯片上跑基准测试，并挑出满足你延迟目标里最便宜的那一款。</p>
           <ul>
-            <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8.5 6.5 12 13 4.5"/></svg>Automatic quantisation with quality checks</li>
-            <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8.5 6.5 12 13 4.5"/></svg>OpenAI-compatible API out of the box</li>
+            <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8.5 6.5 12 13 4.5"/></svg>自动量化，并附带质量校验</li>
+            <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8.5 6.5 12 13 4.5"/></svg>开箱即用的 OpenAI 兼容 API</li>
           </ul>
         </div>
         <div class="visual"><div class="dots"></div>
           <div class="term" id="term">
             <div class="bar"><i></i><i></i><i></i></div>
             <div class="ln"><span class="k">$</span> <span class="w">lumen deploy</span> meta-llama/Llama-4-70B</div>
-            <div class="ln">→ Fetching weights <span class="g">done</span> (3.2 GB, 4.1 s)</div>
-            <div class="ln">→ Benchmarking H200, B200, MI325X …</div>
-            <div class="ln">→ Selected <span class="w">H200 · fp8</span> · 31 ms p50</div>
-            <div class="ln">→ Rolling out to 42 regions <span class="g">✓</span></div>
-            <div class="ln"><span class="g">Live</span> at <span class="w">https://acme.lumen.run/v1</span></div>
+            <div class="ln">→ 拉取权重 <span class="g">完成</span>（3.2 GB，4.1 秒）</div>
+            <div class="ln">→ 正在基准测试 H200、B200、MI325X …</div>
+            <div class="ln">→ 已选定 <span class="w">H200 · fp8</span> · P50 31 ms</div>
+            <div class="ln">→ 正在发布至 42 个区域 <span class="g">✓</span></div>
+            <div class="ln"><span class="g">已上线</span>：<span class="w">https://acme.lumen.run/v1</span></div>
           </div>
         </div>
       </article>
       <article class="stack-card">
         <div>
-          <span class="idx">Step 02</span>
-          <h3>Go <em>global</em> by default.</h3>
-          <p>Every deployment is multi-region from the first request. Lumen keeps replicas warm where your users are, and lets the rest of the planet sleep.</p>
+          <span class="idx">步骤 02</span>
+          <h3>天生<em>全球化。</em></h3>
+          <p>从第一个请求开始，每次部署就是多区域的。Lumen 在用户所在的地方保持热备节点，让星球其他角落安心休眠。</p>
           <ul>
-            <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8.5 6.5 12 13 4.5"/></svg>Anycast endpoint with regional pinning</li>
-            <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8.5 6.5 12 13 4.5"/></svg>Data residency controls per project</li>
+            <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8.5 6.5 12 13 4.5"/></svg>支持区域固定的 Anycast 端点</li>
+            <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8.5 6.5 12 13 4.5"/></svg>按项目控制数据驻留</li>
           </ul>
         </div>
         <div class="visual mapv"><svg id="worldMap" viewBox="0 0 600 340" aria-hidden="true"></svg></div>
       </article>
       <article class="stack-card">
         <div>
-          <span class="idx">Step 03</span>
-          <h3>See every <em>millisecond.</em></h3>
-          <p>Each request is traced from edge to token. Find the slow prompt, the expensive tenant, or the region that needs more headroom, in one click.</p>
+          <span class="idx">步骤 03</span>
+          <h3>看清每一<em>毫秒。</em></h3>
+          <p>每个请求都从边缘追踪到 token。一键定位慢提示词、高成本租户，或是需要更多余量的区域。</p>
           <ul>
-            <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8.5 6.5 12 13 4.5"/></svg>OpenTelemetry export to your stack</li>
-            <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8.5 6.5 12 13 4.5"/></svg>Quality evals on live traffic</li>
+            <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8.5 6.5 12 13 4.5"/></svg>OpenTelemetry 导出到你自己的技术栈</li>
+            <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8.5 6.5 12 13 4.5"/></svg>基于真实流量的质量评估</li>
           </ul>
         </div>
         <div class="visual obsv">
-          <div class="trace"><span>edge · fra-1</span><u style="--l:0%;--w:8%"></u></div>
-          <div class="trace"><span>router</span><u style="--l:8%;--w:6%"></u></div>
-          <div class="trace"><span>queue</span><u style="--l:14%;--w:4%"></u></div>
-          <div class="trace"><span>prefill</span><u class="hot" style="--l:18%;--w:30%"></u></div>
-          <div class="trace"><span>decode · 412 tok</span><u class="hot" style="--l:48%;--w:44%"></u></div>
-          <div class="trace"><span>stream out</span><u style="--l:92%;--w:8%"></u></div>
-          <div class="summary"><span>Trace 7f3a…c21</span><span>Time to first token <b>41 ms</b></span></div>
+          <div class="trace"><span>边缘 · fra-1</span><u style="--l:0%;--w:8%"></u></div>
+          <div class="trace"><span>路由</span><u style="--l:8%;--w:6%"></u></div>
+          <div class="trace"><span>排队</span><u style="--l:14%;--w:4%"></u></div>
+          <div class="trace"><span>预填充</span><u class="hot" style="--l:18%;--w:30%"></u></div>
+          <div class="trace"><span>解码 · 412 tok</span><u class="hot" style="--l:48%;--w:44%"></u></div>
+          <div class="trace"><span>流式输出</span><u style="--l:92%;--w:8%"></u></div>
+          <div class="summary"><span>追踪 7f3a…c21</span><span>首 token 延迟 <b>41 ms</b></span></div>
         </div>
       </article>
     </div>
   </div>
 </section>
 
-<!-- ============ TESTIMONIALS ============ -->
+<!-- ============ 用户评价 ============ -->
 <section class="voices solid alt">
   <div class="wrap">
     <div class="sec-head center">
-      <span class="eyebrow">Loved by people on call</span>
-      <h2 class="h2" data-split>Teams moved to Lumen <em>and stopped paging.</em></h2>
+      <span class="eyebrow">值班工程师的最爱</span>
+      <h2 class="h2" data-split>迁移到 Lumen 的团队<em>再也没被半夜叫醒。</em></h2>
     </div>
     <div class="cols" id="cols"></div>
   </div>
 </section>
 
-<!-- ============ PRICING ============ -->
+<!-- ============ 定价 ============ -->
 <section class="pricing solid" id="pricing">
   <div class="wrap">
     <div class="sec-head center">
-      <span class="eyebrow">Pricing</span>
-      <h2 class="h2" data-split>Pay for tokens, <em>not idle GPUs.</em></h2>
-      <div class="toggle" id="billing" role="group" aria-label="Billing period">
+      <span class="eyebrow">定价</span>
+      <h2 class="h2" data-split>为 token 付费，<em>不为闲置 GPU。</em></h2>
+      <div class="toggle" id="billing" role="group" aria-label="计费周期">
         <span class="knob"></span>
-        <button class="act" data-period="m" aria-pressed="true">Monthly</button>
-        <button data-period="y" aria-pressed="false">Yearly <span class="save">−20%</span></button>
+        <button class="act" data-period="m" aria-pressed="true">按月</button>
+        <button data-period="y" aria-pressed="false">按年 <span class="save">−20%</span></button>
       </div>
     </div>
     <div class="plans" data-reveal>
       <article class="plan">
-        <h3>Starter</h3>
-        <p class="desc">For prototypes and side projects.</p>
-        <div class="price"><b>$0</b><small>/ month</small></div>
+        <h3>入门版</h3>
+        <p class="desc">适合原型与个人项目。</p>
+        <div class="price"><b>$0</b><small>/ 月</small></div>
         <ul>
-          <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8.5 6.5 12 13 4.5"/></svg>$25 of free inference credit</li>
-          <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8.5 6.5 12 13 4.5"/></svg>3 deployments, 6 regions</li>
-          <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8.5 6.5 12 13 4.5"/></svg>Community support</li>
+          <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8.5 6.5 12 13 4.5"/></svg>$25 免费推理额度</li>
+          <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8.5 6.5 12 13 4.5"/></svg>3 个部署，6 个区域</li>
+          <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8.5 6.5 12 13 4.5"/></svg>社区支持</li>
         </ul>
-        <a href="#cta" class="btn btn-ghost">Start free</a>
+        <a href="#cta" class="btn btn-ghost">免费开始</a>
       </article>
       <article class="plan featured">
-        <h3>Growth <span>Most popular</span></h3>
-        <p class="desc">For products with real users and real SLAs.</p>
-        <div class="price"><b data-m="480" data-y="384">$480</b><small>/ month + usage</small></div>
+        <h3>成长版 <span>最受欢迎</span></h3>
+        <p class="desc">适合有真实用户和真实 SLA 的产品。</p>
+        <div class="price"><b data-m="480" data-y="384">$480</b><small>/ 月 + 用量</small></div>
         <ul>
-          <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8.5 6.5 12 13 4.5"/></svg>Unlimited deployments, all 42 regions</li>
-          <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8.5 6.5 12 13 4.5"/></svg>Predictive autoscaling and model router</li>
-          <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8.5 6.5 12 13 4.5"/></svg>99.99% uptime SLA</li>
-          <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8.5 6.5 12 13 4.5"/></svg>Shared Slack channel with our engineers</li>
+          <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8.5 6.5 12 13 4.5"/></svg>部署不限量，覆盖全部 42 个区域</li>
+          <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8.5 6.5 12 13 4.5"/></svg>预测式自动扩缩容与模型路由器</li>
+          <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8.5 6.5 12 13 4.5"/></svg>99.99% 可用性 SLA</li>
+          <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8.5 6.5 12 13 4.5"/></svg>与我们工程师共享的 Slack 频道</li>
         </ul>
-        <a href="#cta" class="btn btn-primary magnetic">Start 14-day trial
+        <a href="#cta" class="btn btn-primary magnetic">开始 14 天试用
           <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
       </article>
       <article class="plan">
-        <h3>Enterprise</h3>
-        <p class="desc">For regulated industries and huge fleets.</p>
-        <div class="price"><b>Custom</b></div>
+        <h3>企业版</h3>
+        <p class="desc">适合受监管行业与超大规模集群。</p>
+        <div class="price"><b>按需定制</b></div>
         <ul>
-          <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8.5 6.5 12 13 4.5"/></svg>Reserved capacity and committed-use pricing</li>
-          <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8.5 6.5 12 13 4.5"/></svg>Dedicated regions and VPC deployment</li>
-          <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8.5 6.5 12 13 4.5"/></svg>99.995% SLA, 15-minute response</li>
+          <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8.5 6.5 12 13 4.5"/></svg>预留容量与承诺用量定价</li>
+          <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8.5 6.5 12 13 4.5"/></svg>专属区域与 VPC 内部署</li>
+          <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8.5 6.5 12 13 4.5"/></svg>99.995% SLA，15 分钟响应</li>
         </ul>
-        <a href="#cta" class="btn btn-ghost">Talk to sales</a>
+        <a href="#cta" class="btn btn-ghost">联系销售</a>
       </article>
     </div>
   </div>
 </section>
 
-<!-- ============ FAQ ============ -->
+<!-- ============ 常见问题 ============ -->
 <section class="faq solid alt" id="faq">
   <div class="wrap faq-grid">
     <div class="sec-head">
-      <span class="eyebrow">Questions</span>
-      <h2 class="h2" data-split>The things engineers <em>ask first.</em></h2>
-      <p class="lead">Still curious? Our engineers answer in the community Slack within the hour.</p>
+      <span class="eyebrow">常见问题</span>
+      <h2 class="h2" data-split>工程师最先<em>问起的事。</em></h2>
+      <p class="lead">还有疑问？我们的工程师会在社区 Slack 里一小时内答复。</p>
     </div>
     <div class="qas">
-      <div class="qa open"><button aria-expanded="true">Is the API compatible with OpenAI clients?<span class="pm"></span></button>
-        <div class="ans"><div><p>Yes. Change the base URL and the key, and every OpenAI SDK works unchanged: chat, completions, embeddings, tool calls and streaming.</p></div></div></div>
-      <div class="qa"><button aria-expanded="false">Do you store my prompts or outputs?<span class="pm"></span></button>
-        <div class="ans"><div><p>No. Zero retention is the default. Requests live in memory for the length of the call and are never logged, sampled or used for training.</p></div></div></div>
-      <div class="qa"><button aria-expanded="false">How do you avoid cold starts?<span class="pm"></span></button>
-        <div class="ans"><div><p>We forecast traffic per region from your history and keep the right number of replicas warm, with weights pre-staged on local NVMe. Scaling up means attaching a GPU, not downloading a model.</p></div></div></div>
-      <div class="qa"><button aria-expanded="false">Can I pin traffic to the EU?<span class="pm"></span></button>
-        <div class="ans"><div><p>Yes. Residency rules are set per project. EU-only, US-only or a custom list of regions, enforced at the edge before a request is routed.</p></div></div></div>
-      <div class="qa"><button aria-expanded="false">What happens when a region goes down?<span class="pm"></span></button>
-        <div class="ans"><div><p>Health checks run every 200 ms. A failing region is drained and its traffic moves to the next nearest replica, typically in under 400 ms, with no change to your endpoint.</p></div></div></div>
+      <div class="qa open"><button aria-expanded="true">API 兼容 OpenAI 客户端吗？<span class="pm"></span></button>
+        <div class="ans"><div><p>兼容。只要改掉 base URL 和密钥，所有 OpenAI SDK 都能原样使用：chat、completions、embeddings、工具调用和流式输出。</p></div></div></div>
+      <div class="qa"><button aria-expanded="false">你们会存我的提示词或输出吗？<span class="pm"></span></button>
+        <div class="ans"><div><p>不会。零留存是默认设置。请求只在调用期间存在内存中，绝不记录、不采样、不用于训练。</p></div></div></div>
+      <div class="qa"><button aria-expanded="false">你们怎么做到没有冷启动？<span class="pm"></span></button>
+        <div class="ans"><div><p>我们根据你的历史流量预测每个区域的需求，保持合适数量的热备节点，并把权重预先缓存到本地 NVMe。扩容只是挂上一块 GPU，而不是下载一个模型。</p></div></div></div>
+      <div class="qa"><button aria-expanded="false">能把流量固定在欧盟区域吗？<span class="pm"></span></button>
+        <div class="ans"><div><p>可以。数据驻留规则按项目设置：仅欧盟、仅美国或自定义区域列表，并在请求被路由之前的边缘层强制执行。</p></div></div></div>
+      <div class="qa"><button aria-expanded="false">某个区域宕机会发生什么？<span class="pm"></span></button>
+        <div class="ans"><div><p>健康检查每 200 ms 运行一次。故障区域会被排空，流量迁移到次近的热备节点，通常在 400 ms 内完成，你的端点无需任何改动。</p></div></div></div>
     </div>
   </div>
 </section>
 
-<!-- ============ FINAL CTA ============ -->
+<!-- ============ 结尾 CTA ============ -->
 <section class="cta" id="cta" data-gl>
   <div class="wrap cta-inner">
-    <span class="eyebrow">Ready when you are</span>
-    <h2 data-split>Light up <em>your models.</em></h2>
-    <p class="lead" data-reveal-one>Deploy your first model free. $25 of credit, no card, live on 42 regions before your coffee cools.</p>
+    <span class="eyebrow">你准备好了，我们就开始</span>
+    <h2 data-split>点亮你的<em>模型。</em></h2>
+    <p class="lead" data-reveal-one>免费部署你的第一个模型。$25 额度，不用绑卡，趁咖啡还没凉就已上线 42 个区域。</p>
     <div class="cta-ctas" data-reveal>
-      <a href="#" class="btn btn-primary btn-lg magnetic">Start deploying free
+      <a href="#" class="btn btn-primary btn-lg magnetic">免费开始部署
         <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
-      <a href="#" class="btn btn-ghost btn-lg">Book a demo</a>
+      <a href="#" class="btn btn-ghost btn-lg">预约演示</a>
     </div>
     <small>SOC 2 Type II · HIPAA · GDPR</small>
   </div>
@@ -518,33 +518,33 @@
 
 </main>
 
-<!-- ============ FOOTER ============ -->
+<!-- ============ 页脚 ============ -->
 <footer class="footer">
   <div class="wrap">
     <div class="foot-grid">
       <div>
         <a href="#top" class="brand"><svg class="brand-mark" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="11.5" stroke="url(#bm)" stroke-width="2.4"/><circle cx="16" cy="16" r="4.2" fill="#ff6a2b"/></svg>Lumen</a>
-        <p>The inference cloud for teams who measure in milliseconds.</p>
-        <span class="status"><i class="live"></i>All systems normal</span>
+        <p>为以毫秒计量的团队而生的推理云。</p>
+        <span class="status"><i class="live"></i>所有系统运行正常</span>
       </div>
-      <div><h5>Platform</h5><ul><li><a href="#">Deploy</a></li><li><a href="#">Router</a></li><li><a href="#">Autoscaling</a></li><li><a href="#">Observability</a></li></ul></div>
-      <div><h5>Developers</h5><ul><li><a href="#">Docs</a></li><li><a href="#">API reference</a></li><li><a href="#">CLI</a></li><li><a href="#">Changelog</a></li></ul></div>
-      <div><h5>Company</h5><ul><li><a href="#">About</a></li><li><a href="#">Careers</a></li><li><a href="#">Blog</a></li><li><a href="#">Contact</a></li></ul></div>
-      <div><h5>Trust</h5><ul><li><a href="#">Security</a></li><li><a href="#">Privacy</a></li><li><a href="#">Status</a></li><li><a href="#">DPA</a></li></ul></div>
+      <div><h5>平台</h5><ul><li><a href="#">部署</a></li><li><a href="#">路由</a></li><li><a href="#">自动扩缩容</a></li><li><a href="#">可观测性</a></li></ul></div>
+      <div><h5>开发者</h5><ul><li><a href="#">文档</a></li><li><a href="#">API 参考</a></li><li><a href="#">命令行工具</a></li><li><a href="#">更新日志</a></li></ul></div>
+      <div><h5>公司</h5><ul><li><a href="#">关于我们</a></li><li><a href="#">加入我们</a></li><li><a href="#">博客</a></li><li><a href="#">联系我们</a></li></ul></div>
+      <div><h5>合规与信任</h5><ul><li><a href="#">安全</a></li><li><a href="#">隐私</a></li><li><a href="#">服务状态</a></li><li><a href="#">DPA</a></li></ul></div>
     </div>
   </div>
   <div class="wordmark" aria-hidden="true">lumen</div>
-  <div class="wrap legal"><span>© 2026 Lumen Compute, Inc.</span><span class="credit">Template by <a href="https://vantle.studio/?utm_source=github&utm_medium=template-footer&utm_campaign=lumen" target="_blank" rel="noopener">Vantle</a> · <a href="https://vantle.studio/?utm_source=github&utm_medium=template-footer&utm_campaign=lumen#start" target="_blank" rel="noopener">Get a custom landing page</a></span></div>
+  <div class="wrap legal"><span>© 2026 Lumen Compute, Inc.</span><span class="credit">模板由 <a href="https://vantle.studio/?utm_source=github&utm_medium=template-footer&utm_campaign=lumen" target="_blank" rel="noopener">Vantle</a> 制作 · <a href="https://vantle.studio/?utm_source=github&utm_medium=template-footer&utm_campaign=lumen#start" target="_blank" rel="noopener">定制你的落地页</a></span></div>
 </footer>
 
-<!-- Template credit badge. Delete this block (and .promo in style.css) to remove it. -->
-<aside class="promo" id="promo" aria-label="Template credit">
+<!-- 模板署名徽标。删除这个区块（以及 style.css 中的 .promo）即可移除。 -->
+<aside class="promo" id="promo" aria-label="模板署名">
   <a href="https://vantle.studio/?utm_source=github&utm_medium=template-badge&utm_campaign=lumen#start" target="_blank" rel="noopener" class="promo-link">
     <span class="promo-dot"></span>
-    <span class="promo-txt">Free template by <b>Vantle</b></span>
-    <span class="promo-cta">Work with us <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
+    <span class="promo-txt">免费模板，由 <b>Vantle</b> 出品</span>
+    <span class="promo-cta">与我们合作 <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
   </a>
-  <button class="promo-x" aria-label="Hide credit badge"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4l8 8M12 4l-8 8"/></svg></button>
+  <button class="promo-x" aria-label="隐藏署名徽标"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4l8 8M12 4l-8 8"/></svg></button>
 </aside>
 
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
